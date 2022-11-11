@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar:ital,wght@0,400;1,900&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  margin: 0;
+  background: #ff0505;
+  display:flex;
+  flex-direction: column;
+  flex:1; 
+}
+
+.title {
+  scale: 65%;
+  background: #ff0505;
+  margin-top:-55px;
+  margin-bottom:-20px;
+  border: 5px solid black;
+  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  color:white;
+  display:flex;
+  flex: 1 1 0;
+  justify-content: center;
+  align-items: center;
+  padding:0;
+}
+
+#board {
+  display:flex;
+  flex-direction:row;
+}
+
+#player, #computer {
+  border: 5px solid white;
+  display: flex;
+  flex-direction: column;
+  background: black;
+  width: 400px;
+  height:400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#player {
+  margin-right: -100px;
+}
+
+.top {
+  margin: 30px 0px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#rock, #paper, #scissors {
+  height: 150px;
+  width: 150px;
+  background: white;
+  border-radius: 20px;
+  margin: 0px;
+  transition: all ease 0.2s;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#rock:hover, #paper:hover, #scissors:hover {
+  transform: translateY(-5px);
+  border: 5px solid #ff0505;
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+#compROCK, #compPAPER, #compSCISSORS {
+  height: 150px;
+  width: 150px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  background: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contBox {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background: black;
+  border: 5px solid white;
+  color:white;
+  font-family: Lalezar;
+  font-size: 30px;
+  display:flex;
+  flex-direction: column; 
+  flex: 1 1 0;
+  justify-content: space-around;
+  align-items: center;
+  padding:50px;
+}
+
+.again {
+  background: white;
+  color:black;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding:7px 25px;
+  border-radius: 8px;
+  width:130px;
+}
+
+#scoreboard {
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+}
+.result {
+  font-family: Lalezar;
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+  -webkit-text-stroke: 1.5px white; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pScore {
+  font-family: Lalezar;
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cScore {
+  font-family: Lalezar;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result {
+  padding-top:50px;
+  margin-bottom:-15px;
+}
+
+Footer

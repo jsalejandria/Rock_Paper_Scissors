@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1 class="title"><img src="images/logo.jpg"></h1>
+
+    <div id="scoreboard"></div> 
+    <div id="board">
+        <div id="player">
+            <div class="top">
+                <button id="rock"><img src="images/Rock.jpg"></button>
+            </div>
+            <div class="bottom">
+                <button id="paper"><img src="images/Paper.jpg"></button>
+                <button id="scissors"><img src="images/Scissors.jpg"></button>
+            </div>
+        </div>
+        <div id="computer">
+            <div class="top">
+                <div id="compROCK"><img src="images/Rock.jpg"></div>
+            </div>
+            <div class="bottom">
+                <div id="compPAPER"><img src="images/Paper.jpg"></div>
+                <div id="compSCISSORS"><img src="images/Scissors.jpg"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div id="cont"></div>
+    <div id="outcome"></div>
 
     <script src="javascript.js"></script>
 </body>
